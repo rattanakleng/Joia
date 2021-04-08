@@ -3,25 +3,20 @@
 ![Badge](https://img.shields.io/badge/GitHub-Pro%20%20%20-orange) &nbsp; <b><i>Joia</i></b> © 2021 All Rights Reserved.  ![Badge](https://img.shields.io/badge/License-APACHE%202.0-blue) All material must be cited or credited, when using material.
 
 ## Table of Contents
-* [Repository Description](#Repository)
-* [User Story](#User)
+* [Repository Description](#Repository-Description)
 * [Usage Information](#Usage)
 * [Authors](#Authors)
-* [Contribution Guidelines](#Contribution)
+* [Contribution Guidelines](#Contribution-Guidelines)
+* [Installation Instructions](#Installation-Instructions)
+* [Development Instructions](#Development-Instructions)
 * [Application Layout](#Application-Layout)
+* [License] (#License)
 
 
 ## Repository Description
-###### [Back to Table of Contents](#Table-of-Contents)
 You live in a busy world; and thriving businesses are busier.  You don't have time .  Don't worry, WE got this: We're <span style="color:red">*Joia*</span>, "HELLO, WORLD!"  Joia, pronounced as "Joy-ah," means gem or jewel.  Joia is your jewel eCommerce website for local art, where you can find your gem for your Jewel or Jim!
 
-## User Story
-### As A Developer
-###### [Back to Table of Contents](#Table-of-Contents)
-1.  TBD... 
-
 ## Usage Information
-###### [Back to Table of Contents](#Table-of-Contents)
 This project can be used for projects, non-profit organizations, academic clubs; and much more!  Not for commercial use, unless granted by the authors.
 
 ## Authors
@@ -30,16 +25,14 @@ This project can be used for projects, non-profit organizations, academic clubs;
 </p>
 
 <p align="left">
-  Select images above to visit the author's GitHub Profile. The names following images left to right are: Connor Favero, Rattanak Leng, Andrew Olson, and Frederick Thomas, Super Coding Ninja™
+  Select images above to visit the author's GitHub Profile. The names following images left to right are: Connor Favero, Rattanak Leng, Andrew Olson, and Frederick Thomas.
 </p>
 
 
 ## Contribution Guidelines
-###### [Back to Table of Contents](#Table-of-Contents)
 I hope you enjoy this repository, and the application's link, given above and below (I love developing new projects).  Please read and follow license instructions.  Thank you for viewing!
 
 ## Installation Instructions
-###### [Back to Table of Contents](#Table-of-Contents)
 1.  Ensure that your application includes the require dependencies, by typing the command in your integrated terminal
     -   npm install inquirer
     -   sass source/stylesheets/index.scss build/stylesheets/index.css
@@ -127,14 +120,8 @@ Doing this or even knowing about it is *unnecessary* for local development
 and is only probably worth knowing in case connectivity problems come up
 which you're trying to diagnose.
 
-
-## Overview: What We Accomplished!
-###### Workflow [Back to Table of Contents](#Table-of-Contents)
-Created an awesome eCommerce website.
-
-
 ## Application Layout
-###### [Back to Table of Contents](#Table-of-Contents)
+
 ![Screenshot 2021-04-07 170443](https://user-images.githubusercontent.com/29310963/113949237-a2c26d80-97c3-11eb-9faa-334f36c32e7f.jpg)
 
 ## License
