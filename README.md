@@ -10,7 +10,7 @@
 * [Installation Instructions](#Installation-Instructions)
 * [Development Instructions](#Development-Instructions)
 * [Application Layout](#Application-Layout)
-* [License] (#License)
+* [License](#License)
 
 
 ## Repository Description
