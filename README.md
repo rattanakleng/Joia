@@ -8,9 +8,8 @@
 * [Usage Information](#Usage)
 * [Authors](#Authors)
 * [Contribution Guidelines](#Contribution)
-* [References](#Ref)
-* [Acknowledgements](#Ack)
-* [Repositiory End-Goal Criteria](#Criterea)
+* [Application Layout](#Application-Layout)
+
 
 ## Repository Description
 ###### [Back to Table of Contents](#Table-of-Contents)
