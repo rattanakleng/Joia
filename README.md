@@ -134,61 +134,9 @@ which you're trying to diagnose.
 Created an awesome eCommerce website.
 
 
-### Media
+## Application Layout
 ###### [Back to Table of Contents](#Table-of-Contents)
-TBD...
-
-## References
-###### [Back to Table of Contents](#Table-of-Contents)
-1.  [NPMjs](https://www.npmjs.com/) provides Documentation, Installation, Examples, Methods, Objects, Questions, Answers, Separator, Prompt Types, User Interfaces and Layouts, Reactive Interface, Support, Known issues, News, Contributing, License, and Plugins.
-
-2.  [Shields IO](https://shields.io/) provides documentations on how to add your shield, for creditbility.  Please feel free to view this resource, for your future developments.
-
-3.  [.saas || .scss || .css](https://www.geeksforgeeks.org/what-is-the-difference-between-scss-and-sass/#:~:text=What%20is%20the%20difference%20between%20SCSS%20and%20SASS%20%3F,-Last%20Updated%20%3A%2025&text=SASS%20(Syntactically%20Awesome%20Style%20Sheets,of%20the%20existing%20CSS%20syntax.)) The comparisons and usages of Syntactically Awesome Style Sheets, SassScript; and Cascaded Style Sheets.
-
-4. [SAAS || CSS](https://www.educba.com/sass-vs-css/) 
-
-5. ["CSS w/Super Powers"](https://sass-lang.com/)
-
-6.  **[Eloquent JavaScript](https://eloquentjavascript.net/)**, 3rd edition (2018)
-This is a book about JavaScript, programming, and digital wonders. Read it online here; or get your own paperback copy.  Written by Marijn Haverbeke.  Licensed under a Creative Commons attribution-noncommercial license. All code in this book may also be considered licensed under an MIT license.
-
-7.  [Guide to Handlebars: Templating Engine for Node/JavaScript](https://stackabuse.com/guide-to-handlebars-templating-engine-for-node/) explains that express is a routing, and middleware is a web framework; which has minimal functionality of its own (express applications are series of middleware function calls).
-
-8.  [Using Middleware and Express](https://expressjs.com/en/guide/using-middleware.html) **Guide to Handlebars: Templating Engine for Node/JavaScript**, by Janith Kasun helps you understand Template Engines, Handlebars; and how to use them!
-
-9.  [Web Application Architecture](https://hackr.io/blog/web-application-architecture-definition-models-types-and-more) describes architecture, Models of Web Componets,Types of Web Application Architecture; and Web App Development Tips!
-
-10.  [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) provides documentations on how to add your shield, for creditbility.  Please feel free to view this resource, for your future developments.
-
-11.  *eCommerce Styles & Ideas*
-    -   [How to Code an Ecommerce Site (Week 10 of 12)](https://www.youtube.com/watch?v=DfbmMjO3Y7o) by [Mackenzie Child](https://www.youtube.com/channel/UCfWZwsP8trUy5uHJg8gcGIQ)
-    -   [10 stunning hover effects with sass](https://codepen.io/caraujo/pen/LVPzxO) by [Renan C. Araujo](https://codepen.io/caraujo)
-
-12. [/* Dynamic Flower, by Frederick Thomas, Super Coding Ninja™](https://codepen.io/SuperCodingNinja/pen/abBxdRL), and [Dynamic Flower](https://codepen.io/SuperCodingNinja/pen/PobLLra), by [Frederick Thomas](https://codepen.io/SuperCodingNinja).
-
-13. [“ui-illustration-business-people-concept“](https://www.freepik.com/vectors/background]
-
-14. ["free-vector-human-silhouette-14.htm"](http://clipart-library.com/clip-art/free-vector-human-silhouette-14.htm/]
-
-15. [“free-vector-human-silhouette-11”](http://clipart-library.com/clip-art/free-vector-human-silhouette-11.htm)
-
-16. [“8Tx85kXTp”](http://clipart-library.com/clipart/8Tx85kXTp.htm)
-
-17. Create vectors at https://vectormagic.com/
-
-18. [“Using border-radius to make shapes: how to build a flower”](https://blog.logrocket.com/using-border-radius-to-make-shapes-how-to-build-a-flower/), [Maks Akymenko](https://blog.logrocket.com/using-border-radius-to-make-shapes-how-to-build-a-flower/).
-
-19. [Building the Login Component in React JS](https://www.youtube.com/watch?v=QoLUB0QkUaE)
-
-
-## Ackowledgements
-###### [Back to Table of Contents](#Table-of-Contents)
-[University of Washington](https://www.pce.uw.edu/), and [Trilogy Education](https://www.trilogyed.com/) (a 2U, Inc. brand),  in coorelation to their Seattle Partnership [UW Coding Bootcamp](https://bootcamp.uw.edu/).
-
-## Repositiory End-Goal Criteria
-###### [Back to Table of Contents](#Table-of-Contents)
-Make it a point to tackle new code, weekly (at least, periodaclly); and break it down.  Try to understand the concepts, yourself.  This only makes you more credible, and a stonger developer: because you've taken the time to study!  Remember this also, as a developer, your goal should be designing NEW experiences that makes people's lives simple; because as developers, we solve problems that people didn't even knew they had- even better, in a way that they do not understand: We are the super heroes and heriones of tomorrow; so get coding, and I hope this repository helps you along your development.  Stay on task, Get Ahead, Change The World!
+![Screenshot 2021-04-07 170443](https://user-images.githubusercontent.com/29310963/113949237-a2c26d80-97c3-11eb-9faa-334f36c32e7f.jpg)
 
 ## License
 
