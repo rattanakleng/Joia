@@ -3,8 +3,8 @@
 ![Badge](https://img.shields.io/badge/GitHub-Pro%20%20%20-orange) &nbsp; <b><i>Joia</i></b> © 2021 All Rights Reserved.  ![Badge](https://img.shields.io/badge/License-APACHE%202.0-blue) All material must be cited or credited, when using material.
 
 ## Table of Contents
-* [Repository Description](#Repository-Description)
-* [Usage Information](#Usage)
+* [Description](#Repository-Description)
+* [Usage Information](#Usage-Information)
 * [Authors](#Authors)
 * [Contribution Guidelines](#Contribution-Guidelines)
 * [Installation Instructions](#Installation-Instructions)
@@ -13,7 +13,7 @@
 * [License](#License)
 
 
-## Repository Description
+## Description
 You live in a busy world; and thriving businesses are busier.  You don't have time .  Don't worry, WE got this: We're <span style="color:red">*Joia*</span>, "HELLO, WORLD!"  Joia, pronounced as "Joy-ah," means gem or jewel.  Joia is your jewel eCommerce website for local art, where you can find your gem for your Jewel or Jim!
 
 ## Usage Information
