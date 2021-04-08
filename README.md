@@ -14,7 +14,9 @@
 
 
 ## Description
-You live in a busy world; and thriving businesses are busier.  You don't have time .  Don't worry, WE got this: We're <span style="color:red">*Joia*</span>, "HELLO, WORLD!"  Joia, pronounced as "Joy-ah," means gem or jewel.  Joia is your jewel eCommerce website for local art, where you can find your gem for your Jewel or Jim!
+Joia, pronounced as "Joy-ah," means gem or jewel, is a platform that connects art enthusiasts directly to artists. The application allows the artists to create an account and post their artworks to potential buyers and allows buyers to contact artists directly through email.
+
+The application was built with React, NodeJS, and other npm packages such as JWT, Bcrypt, Multer, and Mongoose. The user data and artworks stores on MongoDB.
 
 ## Usage Information
 This project can be used for projects, non-profit organizations, academic clubs; and much more!  Not for commercial use, unless granted by the authors.
