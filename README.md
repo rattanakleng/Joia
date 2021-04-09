@@ -20,7 +20,7 @@ Joia, pronounced as "Joy-ah," means gem or jewel, is a platform that connects ar
 The application was built with React, NodeJS, and other npm packages such as JWT, Bcrypt, Multer, and Mongoose. The user data and artworks stores on MongoDB.
 
 ## Live Page
-* [Link to live page](#https://joia.herokuapp.com/)
+* [Link to live page](https://joia.herokuapp.com/)
 
 ## Contributors
 <p align="center">
