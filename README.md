@@ -4,8 +4,8 @@
 
 ## Table of Contents
 * [Description](#Repository-Description)
+* [Live Page](#Live-Page)
 * [Contributors](#Contributors)
-* [Contribution Guidelines](#Contribution-Guidelines)
 * [Installation Instructions](#Installation-Instructions)
 * [Development Instructions](#Development-Instructions)
 * [Application Layout](#Application-Layout)
@@ -18,6 +18,9 @@
 Joia, pronounced as "Joy-ah," means gem or jewel, is a platform that connects art enthusiasts directly to artists. The application allows the artists to create an account and post their artworks to potential buyers and allows buyers to contact artists directly through email.
 
 The application was built with React, NodeJS, and other npm packages such as JWT, Bcrypt, Multer, and Mongoose. The user data and artworks stores on MongoDB.
+
+## Live Page
+* [Link to live page](#https://joia.herokuapp.com/)
 
 ## Contributors
 <p align="center">
