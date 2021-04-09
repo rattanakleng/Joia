@@ -9,7 +9,7 @@
 * [Installation Instructions](#Installation-Instructions)
 * [Development Instructions](#Development-Instructions)
 * [Application Layout](#Application-Layout)
-* [Tools & Resources](#Tools-&-Resources)
+* [Tools & Resources](#Tools-and-Resources)
 * [Usage Information](#Usage-Information)
 * [License](#License)
 
@@ -43,7 +43,7 @@ The application was built with React, NodeJS, and other npm packages such as JWT
 
 ![Screenshot 2021-04-07 170443](https://user-images.githubusercontent.com/29310963/113949237-a2c26d80-97c3-11eb-9faa-334f36c32e7f.jpg)
 
-## Tools & Resources
+## Tools and Resources
 * [React](https://reactjs.org/)
 * [TypeScript](https://www.typescriptlang.org/)
 * [NodeJS](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
