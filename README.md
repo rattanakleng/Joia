@@ -45,14 +45,14 @@ The application was built with React, NodeJS, and other npm packages such as JWT
 
 ## Tools & Resources
 * [React](https://reactjs.org/)
-* [JWT](https://jwt.io/)
 * [TypeScript](https://www.typescriptlang.org/)
-* [Bcrypt](https://www.npmjs.com/package/bcrypt)
-* [Multer](https://www.npmjs.com/package/multer)
+* [NodeJS](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 * [MongoDB](https://www.mongodb.com/)
 * [Mongoose](https://www.mongoose.com/)
+* [JWT](https://jwt.io/)
+* [Bcrypt](https://www.npmjs.com/package/bcrypt)
+* [Multer](https://www.npmjs.com/package/multer)
 * [Express](https://www.npmjs.com/package/express)
-* [NodeJS](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 * [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 
 ## Usage Information
