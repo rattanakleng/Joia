@@ -9,7 +9,7 @@
 * [Installation Instructions](#Installation-Instructions)
 * [Development Instructions](#Development-Instructions)
 * [Application Layout](#Application-Layout)
-* [Tools & Resources](#Tools & Resources)
+* [Tools & Resources](#Tools-&-Resources)
 * [Usage Information](#Usage-Information)
 * [License](#License)
 
