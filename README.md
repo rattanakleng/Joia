@@ -53,14 +53,15 @@ I hope you enjoy this repository, and the application's link, given above and be
 3.  Run “node [fileName].js”
 
 ## Development Instructions
-1- After cloning the repository to your local machine, run the command "npm install" in the root folder and the client folder (install NodeJS if you do not have it installed yet). 
-2- In the root folder, create a file named ".env" then assign a value to "JWT_SCRET" with a single line of code "JWT_SECRET=<any-string-vlaue>", for example "JWT_SECRET=secret".
-3- Setup database: Add this line of code" MONGODB_URI=mongod+svr://myatlasusername:myatlaspassword@cluster0.va5bm.mongodb.net/myFirstDatabase" into ".env file". Replace the username and password with your MongoDB username and password.
-4- Run application: 
-Use the command "npm run start" to launch both front-end/client-side and back-end/server-side.
-Use "npm run client" to launch both front-end/client-side only.
-Use the command "npm run dev" to launch back-end/server-side only.
-5- Setup for production: use the command "npm run build"
+1. After cloning the repository to your local machine, run the command "npm install" in the root folder and the client folder (install NodeJS if you do not have it installed yet). 
+2. In the root folder, create a file named ".env" then assign a value to "JWT_SCRET" with a single line of code "JWT_SECRET=<any-string-vlaue>", for example "JWT_SECRET=secret".
+3. Setup database: Add this line of code" MONGODB_URI=mongod+svr://myatlasusername:myatlaspassword@cluster0.va5bm.mongodb.net/myFirstDatabase" into ".env file". (Replace the username and password with your MongoDB username and password).
+5. Run application: 
+- Use the command "npm run start" to launch both front-end/client-side and back-end/server-side.
+- Use "npm run client" to launch both front-end/client-side only.
+- Use the command "npm run dev" to launch back-end/server-side only.
+  
+5. Setup for production: use the command "npm run build"
 
 ## Application Layout
 
