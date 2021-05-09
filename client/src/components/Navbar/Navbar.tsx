@@ -106,7 +106,7 @@ export const Navbar = () => {
             </li>
 
             <li>
-              <Link to="/" className="nav-links">
+              <Link to="/signup" className="nav-links">
                 <ButtonPrimary text="Register" onClick={closeMobileMenu} />
               </Link>
             </li>
