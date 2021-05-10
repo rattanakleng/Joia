@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ButtonPrimary } from '../ButtonPrimary/ButtonPrimary'
 import { ButtonSecondary } from '../ButtonSecondary/ButtonSecondary'
-import LoginOrLogout from '../LoginOrLogout/LoginOrLogout'
+// import LoginOrLogout from '../LoginOrLogout/LoginOrLogout'
+import { useIsAuthenticated, useLogout } from '../../utils/auth'
 import './Navbar.css'
 
 export const Navbar = () => {
@@ -15,9 +16,12 @@ export const Navbar = () => {
 
   const closeMobileMenu = () => setClick(false)
 
-  const handleLockout = () => {
-    localStorage.clear()
-    window.location.href = '/login'
+  const isAuthenticated = useIsAuthenticated()
+  const logout = useLogout()
+
+  const handleLogout = () => {        
+    logout();
+    window.location.href = "/"
   }
 
   // const showButtonMode = () => {
@@ -29,17 +33,107 @@ export const Navbar = () => {
   // }, [])
 
   // window.addEventListener('resize', showButtonMode)
+  const authLinks = (
+    <Fragment>
+
+      <li className="nav-item">
+        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+          Home
+        </Link>
+      </li>
+
+      <li className="nav-item">
+        <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+          About
+        </Link>
+      </li>
+
+      <li className="nav-item">
+        <a href="mailto: joia@live.com" className="nav-links" onClick={closeMobileMenu} >
+          Contact Us
+        </a>
+      </li>
+
+      <li className="nav-item">
+        <Link to="/post" className="nav-links" onClick={closeMobileMenu} >
+          Sell
+        </Link>
+      </li>
+
+      <li>        
+        <Link to="/allartworks" className="nav-links" onClick={closeMobileMenu} >
+          All Artworks
+        </Link>
+      </li>
+
+      <li className="nav-item">
+        <Link to={localStorage.getItem('jwtToken') ? '/account' : '/login'}     className="nav-links" onClick={closeMobileMenu}>
+          Account
+        </Link>
+      </li>
+      
+      <li>
+        <Link to="/" className="nav-links">
+          <ButtonSecondary text="Log Out" onClick={ handleLogout }/>
+          </Link>        
+      </li>
+
+    </Fragment>
+  );
+
+  const guestLinks = (
+    <Fragment>
+      <li className="nav-item">
+        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+          Home
+        </Link>
+      </li>
+
+      <li className="nav-item">
+        <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+          About
+        </Link>
+      </li>
+
+      <li className="nav-item">
+        <a href="mailto: joia@email.com" className="nav-links" onClick={closeMobileMenu} >
+          Contact Us
+        </a>
+      </li>
+
+      <li className="nav-item">
+        <Link to="/post" className="nav-links" onClick={closeMobileMenu}>
+          Sell
+        </Link>
+      </li>
+
+      <li>        
+        <Link to="/allartworks" className="nav-links" onClick={closeMobileMenu} >
+          All Artworks
+        </Link>
+      </li>
+
+      <li>
+        <Link to="/signup" className="nav-links">
+          <ButtonPrimary text="Register" onClick={closeMobileMenu} />
+        </Link>
+      </li>
+
+      <li>
+        <Link to="/login" className="nav-links">
+          <ButtonPrimary text="Login"/>
+        </Link>
+      </li>
+
+    </Fragment>
+  )
 
   return (
-    <>
+    <Fragment>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo">
-            <img
-              className="navbar-logo"
-              src="./assets/img/logo.png"
-              alt="Logo image"
-            />
+            <img className="navbar-logo" src="./assets/img/logo.png" alt="Logo image" />
           </Link>
 
           <div className="menu-icon" onClick={handleClick}>
@@ -47,35 +141,7 @@ export const Navbar = () => {
           </div>
 
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-                About
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <a
-                href="mailto: joia@live.com"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Contact Us
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <Link to="/post" className="nav-links" onClick={closeMobileMenu}>
-                Sell
-              </Link>
-            </li>
-
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="/allartworksbyuser"
                 className="nav-links"
@@ -83,42 +149,12 @@ export const Navbar = () => {
               >
                 User Artwork
               </Link>
-            </li>
+            </li> */}
 
-            <li className="nav-item">
-              <Link
-                to="/allartworks"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                All Art
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link
-                to={localStorage.getItem('jwtToken') ? '/account' : '/login'}
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Account
-              </Link>
-            </li>
-
-            <li>
-              <Link to="/signup" className="nav-links">
-                <ButtonPrimary text="Register" onClick={closeMobileMenu} />
-              </Link>
-            </li>
-
-            <li>
-              <Link to="..." className="nav-links">
-                <LoginOrLogout loginMode={true} onClick={closeMobileMenu} />
-              </Link>
-            </li>
+            { isAuthenticated ? authLinks : guestLinks } 
           </ul>
         </div>
       </nav>
-    </>
+    </Fragment>
   )
 }
