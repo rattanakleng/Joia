@@ -1,3 +1,5 @@
+import "./ArtItemForAllArtworks.css"
+
 interface IArtItemProps {
   name: string
   description: string
@@ -10,7 +12,7 @@ interface IArtItemProps {
   imagePath: string
 }
 
-const ArtItem = (props: IArtItemProps) => {
+const ArtItemForAllArtworks = (props: IArtItemProps) => {
   const {
     name,
     description,
@@ -28,7 +30,7 @@ const ArtItem = (props: IArtItemProps) => {
       <div className="row no-gutters">
         <div className="col-md-5">
           <img
-            className="img-fluid bg-dark"
+            className="img-fluid bg-dark art-image"
             src={imagePath}
             alt="Artwork thumnail"
           />
@@ -67,4 +69,4 @@ const ArtItem = (props: IArtItemProps) => {
   )
 }
 
-export default ArtItem
+export default ArtItemForAllArtworks

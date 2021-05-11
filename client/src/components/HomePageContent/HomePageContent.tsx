@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Input, FormBtn, FormBtnOutline } from '../Form/Form'
 import { Container, Col } from '../../LayoutComponents/Grid/Grid'
-import ArtItem from '../ArtItemForAllArtworks'
+import ArtItemForAllArtworks from '../ArtItemForAllArtworks/ArtItemForAllArtworks'
 import api from '../../utils/api'
 
 // // Handles updating component state when the user types into the input field
@@ -66,7 +66,7 @@ const HomePageMain = () => {
 
           {allArt.map((anArt) => (
             <div className="container">
-              <ArtItem
+              <ArtItemForAllArtworks
                 showcontactinfo={true}
                 userid={anArt.user}
                 name={anArt.name}

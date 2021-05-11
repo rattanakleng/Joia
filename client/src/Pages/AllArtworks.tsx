@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ArtItemForAllArtworks from '../components/ArtItemForAllArtworks'
+import ArtItemForAllArtworks from '../components/ArtItemForAllArtworks/ArtItemForAllArtworks'
 import api from '../utils/api'
 
 export default function AllArtworks() {
