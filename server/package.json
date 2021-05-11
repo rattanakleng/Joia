@@ -9,7 +9,7 @@
     "test": "jest",
     "testDetectOpenHandles": "jest --detectOpenHandles",
     "coverage": "jest --coverage",
-    "build": "tsc && cp -r ./node_modules ../build && cp -r src/nonReact_publics ../build"
+    "build": "tsc && ncp -r ./node_modules ../build && ncp -r src/nonReact_publics ../build"
   },
   "keywords": [],
   "author": "",
