@@ -1,91 +1,79 @@
-
 // // import React from 'react';
 import { Row, Col, Container } from '../LayoutComponents/Grid/Grid'
-import {FormBtn, FormBtnOutline} from '../components/Form/Form'
-import {useAuthenticatedUser, useLogout} from '../utils/auth';
-import './Profile';
-import './Signup';
-import { useHistory } from 'react-router';
-
+import { FormBtn, FormBtnOutline } from '../components/Form/Form'
+import { useAuthenticatedUser, useLogout } from '../utils/auth'
+import './Profile'
+import './Signup'
+import { useHistory } from 'react-router'
+import { Link } from 'react-router-dom'
 
 const Profile = () => {
+  const user = useAuthenticatedUser()
 
-  const history = useHistory();
+  console.log('authUser = ', user)
 
-  const user = useAuthenticatedUser();
-
-  console.log("authUser = ", user);
-  
-  const handleFormSubmit = async (e) => {
-    e.preventDefault();
-    history.push('/post');
-  }
-
-  const logout = useLogout();
-  
-
-  // function handleFormClear(e) {
-  //   e.preventDefault();
-  //   history.push('/account'); // USE MODAL INSTEAD, using the functionality to Pass the User's data from Sign.tsx to Profile.tsx;and then history.push('/account')
-  // };
-  
   return (
-    <Container py="-4">
-      <div className="container">
-        <h1 className="text-center">Welcome, {user.name}</h1>
-        <Row py="-3">
-          <Col size="md-4 sm-12">
-            <img
+    <div className="wrapper">
+      <div className="main-content">
+      <Container py="-4">
+        <div className="container">
+          <h1 className="text-center">Welcome, {user.name}</h1>
+          <Row py="-3">
+            <Col size="md-4 sm-12">
+              {/* <img
               className="img-fluid pr-4 mt-3"
               src="./assets/img/profile.jpg"
               alt="Uploaded artwork"
-            />
-          </Col>
-            
-          <form onSubmit={handleFormSubmit} className='py-2 mx-1 px-4'>
-            <div className='row align-items-center justify-content-center'>
-              <div>
-                {/* <div><h5><b>Name:</b>&nbsp;&nbsp;&nbsp;{user.name}</h5></div><br></br> */}
-            
-                <div><h5><b>Location:</b>&nbsp;&nbsp;&nbsp;{user.location}</h5></div><br></br> 
-                
-                <div><h5><b>Email:</b>&nbsp;&nbsp;&nbsp;{user.email}</h5></div><br></br> 
+            /> */}
+            </Col>
 
-                <div></div><h5><b>Phone:</b>&nbsp;&nbsp;&nbsp;{user.phone}</h5></div>
-            </div>
+            <Col size="md-8 sm-12">
+              <form className="pt-5 mb-4">
+                <div>
+                  <div>
+                    <h5>
+                      <b>Name:</b>&nbsp;&nbsp;&nbsp;{user.name}
+                    </h5>
+                  </div>
 
-            <br></br>
+                  <div>
+                    <h5>
+                      <b className="mr-3">Location:</b>
+                      {user.location}
+                    </h5>
+                  </div>
 
-            <div className='align-items-center justify-content-center'>
-              <div className='row align-items-center justify-content-center'><h5><b>Artwork:</b>&nbsp;&nbsp;&nbsp;{user.location}</h5></div><br></br>
-              
-              <div className='row align-items-center justify-content-center'><h5><b>Artwork:</b>&nbsp;&nbsp;&nbsp;{user.location}</h5></div><br></br>
-              
-              <div className='row align-items-center justify-content-center'><h5><b>Artwork:</b>&nbsp;&nbsp;&nbsp;{user.location}</h5></div>
-            </div>
-            
-            <div className='row align-items-center justify-content-center'>
-              {/* <FormBtn onClick={handleFormClear}>
-                Update Profile
-              </FormBtn> */}
+                  <div>
+                    <h5>
+                      <b className="mr-3">Email:</b>
+                      {user.email}
+                    </h5>
+                  </div>
 
-              &nbsp;&nbsp;&nbsp;
+                  <div></div>
+                  <h5>
+                    <b className="mr-3">Phone:</b>
+                    {user.phone}
+                  </h5>
+                </div>
+              </form>
 
-              <FormBtnOutline onClick={handleFormSubmit}>
-                Sell Artwork
-              </FormBtnOutline>
+              <Link to="/allartworksbyuser" className="btn btn-warning mr-3">
+                My Artworks
+              </Link>
 
-              &nbsp;&nbsp;&nbsp;
-             
-              <FormBtn onClick={logout}>
-                Logout
-              </FormBtn>
-            </div>
-            </form>
-        </Row>
+              <Link to="/post" className="btn btn-outline-warning">
+                Post New Artwork
+              </Link>
+            </Col>
+            <div></div>
+          </Row>
+        </div>
+      </Container>
       </div>
-    </Container>
+      
+    </div>
   )
 }
 
-export default Profile;
+export default Profile

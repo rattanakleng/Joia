@@ -1,25 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Input, FormBtn, FormBtnOutline } from '../Form/Form'
 import { Container, Col } from '../../LayoutComponents/Grid/Grid'
+import ArtItem from '../ArtItemForAllArtworks'
+import api from '../../utils/api'
 
-// Handles updating component state when the user types into the input field
-function handleInputChange() {
-  // const { name, value } = event.target;
-  // setFormObject({...formObject, [name]: value})
-}
+// // Handles updating component state when the user types into the input field
+// function handleInputChange() {
+//   // const { name, value } = event.target;
+//   // setFormObject({...formObject, [name]: value})
+// }
 
-function handleFormSubmit() {
-  // submit form 
-}
+// function handleFormSubmit() {
+//   // submit form
+// }
 
-function handleFormClear() {
-  // clear form function
-}
+// function handleFormClear() {
+//   // clear form function
+// }
 
 const HomePageMain = () => {
+  const [allArt, setAllArt] = useState([])
+
+  useEffect(() => {
+    const asyncBody = async () => {
+      let allArt = await api.getAllArt()
+      setAllArt(allArt.data)
+      console.log(allArt)
+    }
+
+    asyncBody().then(() => console.log('done getting all art'))
+  }, [])
+
   return (
     <>
-      <div className="m-0 bg-light pt-5">
+      {/* Future Development create search artworks by artist name or city name */
+      /* <div className="m-0 bg-light pt-5">
         <h2 className="text-center">Location</h2>
         <div className="row d-flex flex-wrap justify-content-center">
           <Col size="md-6 sm-12">
@@ -43,12 +58,27 @@ const HomePageMain = () => {
             </form>
           </Col>
         </div>
-      </div>
+      </div> */}
 
       <Container>
-        <h2 className="text-center pt-5"> Artwork in Seattle</h2>
+        <div className="container pt-5 mt-0">
+          <h1 className="text-center mb-5">Artworks by Your Local Artits</h1>
 
-        <h4 className="text-center py-5">Place holder for card components</h4>
+          {allArt.map((anArt) => (
+            <div className="container">
+              <ArtItem
+                showcontactinfo={true}
+                userid={anArt.user}
+                name={anArt.name}
+                description={anArt.description}
+                category={anArt.category}
+                size={anArt.size}
+                price={anArt.price}
+                imagePath={anArt.imagePath}
+              />
+            </div>
+          ))}
+        </div>
       </Container>
     </>
   )

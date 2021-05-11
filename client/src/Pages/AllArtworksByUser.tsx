@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ArtItem from '../components/ArtItem'
+import ArtItemForUser from '../components/ArtItemForUser/ArtItemForUser'
 import api from '../utils/api'
 import { useAuthenticatedUser } from '../utils/auth'
 
@@ -19,11 +19,11 @@ export default function AllArtworksByUser() {
 
   return (
     <div className="bg-light">
-      <div className="container pb-5">
-        <h2 className="text-center my-5">Your Artworks</h2>
+      <div className="container py-5">
+        <h2 className="text-center my-5">Artworks by <span>{user.name} </span></h2>
         <ul>
           {allArtByUser.map((anArt, i) => (
-            <ArtItem
+            <ArtItemForUser
               showcontactinfo={false}
               userid={''}
               name={anArt.name}
@@ -32,7 +32,7 @@ export default function AllArtworksByUser() {
               category={anArt.category}
               size={anArt.size}
               price={anArt.price}
-            ></ArtItem>
+            ></ArtItemForUser>
           ))}
         </ul>
       </div>

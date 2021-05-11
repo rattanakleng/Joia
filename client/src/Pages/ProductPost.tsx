@@ -155,7 +155,6 @@ const ProductPost = () => {
               <Input
                 onChange={(e) => setTitle(e.target.value)}
                 name="title"
-                placeholder="Artwork title"
                 required
               />
 
@@ -163,7 +162,6 @@ const ProductPost = () => {
               <TextArea
                 onChange={(e) => setDescription(e.target.value)}
                 name="description"
-                placeholder="Description"
                 required
               />
 
@@ -171,7 +169,6 @@ const ProductPost = () => {
               <Input
                 onChange={(e) => setCategory(e.target.value)}
                 name="category"
-                placeholder="Select Category"
                 required
               />
 

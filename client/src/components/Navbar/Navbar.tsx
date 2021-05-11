@@ -5,6 +5,7 @@ import { ButtonPrimary } from '../ButtonPrimary/ButtonPrimary'
 import { ButtonSecondary } from '../ButtonSecondary/ButtonSecondary'
 // import LoginOrLogout from '../LoginOrLogout/LoginOrLogout'
 import { useIsAuthenticated, useLogout } from '../../utils/auth'
+
 import './Navbar.css'
 
 export const Navbar = () => {
@@ -19,9 +20,9 @@ export const Navbar = () => {
   const isAuthenticated = useIsAuthenticated()
   const logout = useLogout()
 
-  const handleLogout = () => {        
-    logout();
-    window.location.href = "/"
+  const handleLogout = () => {
+    logout()
+    window.location.href = '/'
   }
 
   // const showButtonMode = () => {
@@ -35,7 +36,6 @@ export const Navbar = () => {
   // window.addEventListener('resize', showButtonMode)
   const authLinks = (
     <Fragment>
-
       <li className="nav-item">
         <Link to="/" className="nav-links" onClick={closeMobileMenu}>
           Home
@@ -49,37 +49,45 @@ export const Navbar = () => {
       </li>
 
       <li className="nav-item">
-        <a href="mailto: joia@live.com" className="nav-links" onClick={closeMobileMenu} >
+        <a
+          href="mailto: joia@live.com"
+          className="nav-links"
+          onClick={closeMobileMenu}
+        >
           Contact Us
         </a>
       </li>
 
       <li className="nav-item">
-        <Link to="/post" className="nav-links" onClick={closeMobileMenu} >
-          Sell
+        <Link to="/post" className="nav-links" onClick={closeMobileMenu}>
+          Post Artwork
         </Link>
       </li>
 
-      <li>        
-        <Link to="/allartworks" className="nav-links" onClick={closeMobileMenu} >
-          All Artworks
+      {/* <li>
+        <Link
+          to="/allartworksbyuser"
+          className="nav-links"
+          onClick={closeMobileMenu}
+        >
+          Your Artworks
         </Link>
-      </li>
+      </li> */}
 
       <li className="nav-item">
-        <Link to={localStorage.getItem('jwtToken') ? '/account' : '/login'}     className="nav-links" onClick={closeMobileMenu}>
-          Account
+        <Link to={localStorage.getItem('jwtToken') ? '/account' : '/login'} 
+          className="nav-links" onClick={closeMobileMenu} >
+          Profile
         </Link>
       </li>
-      
+
       <li>
         <Link to="/" className="nav-links">
-          <ButtonSecondary text="Log Out" onClick={ handleLogout }/>
-          </Link>        
+          <ButtonSecondary text="Log Out" onClick={handleLogout} />
+        </Link>
       </li>
-
     </Fragment>
-  );
+  )
 
   const guestLinks = (
     <Fragment>
@@ -96,20 +104,18 @@ export const Navbar = () => {
       </li>
 
       <li className="nav-item">
-        <a href="mailto: joia@email.com" className="nav-links" onClick={closeMobileMenu} >
+        <a
+          href="mailto: joia@email.com"
+          className="nav-links"
+          onClick={closeMobileMenu}
+        >
           Contact Us
         </a>
       </li>
 
       <li className="nav-item">
         <Link to="/post" className="nav-links" onClick={closeMobileMenu}>
-          Sell
-        </Link>
-      </li>
-
-      <li>        
-        <Link to="/allartworks" className="nav-links" onClick={closeMobileMenu} >
-          All Artworks
+          Sell Artwork
         </Link>
       </li>
 
@@ -121,10 +127,9 @@ export const Navbar = () => {
 
       <li>
         <Link to="/login" className="nav-links">
-          <ButtonPrimary text="Login"/>
+          <ButtonSecondary text="Login" />
         </Link>
       </li>
-
     </Fragment>
   )
 
@@ -133,7 +138,11 @@ export const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo">
-            <img className="navbar-logo" src="./assets/img/logo.png" alt="Logo image" />
+            <img
+              className="navbar-logo"
+              src="./assets/img/logo.png"
+              alt="Logo image"
+            />
           </Link>
 
           <div className="menu-icon" onClick={handleClick}>
@@ -151,7 +160,7 @@ export const Navbar = () => {
               </Link>
             </li> */}
 
-            { isAuthenticated ? authLinks : guestLinks } 
+            {isAuthenticated ? authLinks : guestLinks}
           </ul>
         </div>
       </nav>
